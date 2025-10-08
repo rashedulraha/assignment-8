@@ -7,7 +7,7 @@ import bannerMainImage from "../../assets/hero.png";
 const Banner = () => {
   return (
     <>
-      <div className="bg-[#f5f5f5] pt-5 sm:pt-8 md:pt-14">
+      <div className=" pt-5 sm:pt-8 md:pt-14">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h1 className="text-3xl sm:text-5xl md:text-7xl  font-bold text-center  capitalize text-[#182f44] leading-10  sm:leading-14 md:leading-20">
@@ -47,6 +47,42 @@ const Banner = () => {
             </figure>
           </div>
         </Container>
+
+        <div className="p-5 sm:p-8 md:p-12 bg-gradient-to-b from-[#632EE3] to-[#9F62F2]">
+          <Container>
+            <h1 className="text-lg sm:text-2xl lg:text-3xl font-semibold text-center text-white">
+              Trusted by Millions, Built for You
+            </h1>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-5 md:mt-10">
+              <div className="text-center space-y-2 mt-3  ">
+                <p className="text-white opacity-[0.8]">Total Downloads</p>
+                <h2 className="text-white text-2xl sm:text-3xl lg:text-6xl font-semibold text-center ">
+                  29.6M
+                </h2>
+                <p className="text-white opacity-[0.8]">
+                  21% more than last month
+                </p>
+              </div>
+              <div className="text-center space-y-2 mt-3 md:mt-5 ">
+                <p className="text-white opacity-[0.8]">Total Reviews</p>
+                <h2 className="text-white text-2xl sm:text-3xl lg:text-6xl font-semibold text-center ">
+                  906K
+                </h2>
+                <p className="text-white opacity-[0.8]">
+                  46% more than last month
+                </p>
+              </div>
+              <div className="text-center space-y-2 mt-3 md:mt-5 ">
+                <p className="text-white opacity-[0.8]">Active Apps</p>
+                <h2 className="text-white text-2xl sm:text-3xl lg:text-6xl font-semibold text-center ">
+                  132+
+                </h2>
+                <p className="text-white opacity-[0.8]">31 more will Launch</p>
+              </div>
+            </div>
+          </Container>
+        </div>
       </div>
     </>
   );

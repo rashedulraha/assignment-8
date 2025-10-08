@@ -67,7 +67,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="shadow-sm">
+    <div className="shadow-sm bg-white">
       <Container>
         <div className="navbar">
           <div className="navbar-start">

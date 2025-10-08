@@ -20,7 +20,3 @@ p {
 .active {
   @apply bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b-2 border-[#632EE3];
 }
-
-.remove-border {
-  @apply border-0;
-}

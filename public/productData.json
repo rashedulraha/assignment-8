@@ -1,0 +1,382 @@
+[
+  {
+    "image": "https://i.pinimg.com/1200x/74/38/f2/7438f27cf7e42e94bc8d232b71a143a6.jpg",
+    "title": "Social Connect",
+    "companyName": "ConnectTech",
+    "id": 1,
+    "shortDescription": "Connect with friends and family on social media.",
+    "fullDescription": "A social networking app to connect with friends and family, share updates, and stay in touch with your community through posts and messages.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.2,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 450 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/5d/c5/ad/5dc5adcbc4fd08d6d073394ef4d4b567.jpg",
+    "title": "Fitness Tracker",
+    "companyName": "HealthPro",
+    "id": 2,
+    "shortDescription": "Track workouts and health metrics daily.",
+    "fullDescription": "Track your daily workouts and health metrics easily with personalized insights, progress tracking, and fitness goals.",
+    "size": 30,
+    "reviews": 800,
+    "ratingAvg": 4.5,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 330 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/736x/78/db/f3/78dbf3b6ac963513dbb7a7da0923ae91.jpg",
+    "title": "Recipe Master",
+    "companyName": "CookEasy",
+    "id": 3,
+    "shortDescription": "Discover recipes and cooking tips.",
+    "fullDescription": "Discover thousands of recipes and cooking tips to create delicious meals at home with step-by-step instructions.",
+    "size": 25,
+    "reviews": 1500,
+    "ratingAvg": 4.7,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/a9/37/51/a93751c12394435232aef09a4a2acd92.jpg",
+    "title": "Budget Planner",
+    "companyName": "FinanceHub",
+    "id": 4,
+    "shortDescription": "Manage finances and track expenses.",
+    "fullDescription": "Manage your finances and track expenses effortlessly with intuitive budgeting tools and financial insights.",
+    "size": 20,
+    "reviews": 600,
+    "ratingAvg": 4.0,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 160 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/53/e8/13/53e813aa41d28c4fe28386eb01909fe0.jpg",
+    "title": "Language Learner",
+    "companyName": "LinguaApp",
+    "id": 5,
+    "shortDescription": "Learn languages with interactive lessons.",
+    "fullDescription": "Learn new languages with interactive lessons and engaging exercises tailored to your learning pace.",
+    "size": 35,
+    "reviews": 900,
+    "ratingAvg": 4.6,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 110 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 360 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/736x/48/21/c2/4821c2f23537fcdd1a358766e1cacf9b.jpg",
+    "title": "Photo Editor",
+    "companyName": "EditPro",
+    "id": 6,
+    "shortDescription": "Edit photos with advanced tools.",
+    "fullDescription": "Edit your photos with advanced tools and filters to create stunning visuals for social media and personal use.",
+    "size": 50,
+    "reviews": 2000,
+    "ratingAvg": 4.3,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 980 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/18/05/a3/1805a3366e8062d6fd77806201a8ded7.jpg",
+    "title": "Music Player",
+    "companyName": "TuneIn",
+    "id": 7,
+    "shortDescription": "Stream your favorite music tracks.",
+    "fullDescription": "Stream and play your favorite music tracks with high-quality audio and personalized playlists.",
+    "size": 40,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 440 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/736x/ce/78/24/ce7824972039bc6728a2a374c60d211a.jpg",
+    "title": "News Reader",
+    "companyName": "DailyNews",
+    "id": 8,
+    "shortDescription": "Stay updated with global news.",
+    "fullDescription": "Stay updated with the latest news from around the world, curated for your interests.",
+    "size": 28,
+    "reviews": 700,
+    "ratingAvg": 4.1,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 215 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/9d/09/c7/9d09c73ec5decc01aa987de7d053fef4.jpg",
+    "title": "Weather Forecast",
+    "companyName": "SkyWatch",
+    "id": 9,
+    "shortDescription": "Get accurate weather forecasts.",
+    "fullDescription": "Get accurate weather forecasts for your location with real-time updates and alerts.",
+    "size": 22,
+    "reviews": 500,
+    "ratingAvg": 4.8,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 270 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/736x/4f/cf/23/4fcf23215277b36814ce0d714c92ac6b.jpg",
+    "title": "Task Manager",
+    "companyName": "OrganizeMe",
+    "id": 10,
+    "shortDescription": "Organize tasks and boost productivity.",
+    "fullDescription": "Organize your tasks and boost productivity with a simple and intuitive task management system.",
+    "size": 18,
+    "reviews": 400,
+    "ratingAvg": 4.2,
+    "downloads": 100000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 140 },
+      { "name": "5 star", "count": 140 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/bd/05/c6/bd05c6eb6dd717b171f9d975a613f4e8.jpg",
+    "title": "Ebook Reader",
+    "companyName": "BookLover",
+    "id": 11,
+    "shortDescription": "Read your favorite books on the go.",
+    "fullDescription": "Read your favorite books on the go with a user-friendly ebook reader and library management.",
+    "size": 32,
+    "reviews": 950,
+    "ratingAvg": 4.5,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 475 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/09/8a/9a/098a9a920abd405c7c1ad37ad1919540.jpg",
+    "title": "Video Editor",
+    "companyName": "ClipMaster",
+    "id": 12,
+    "shortDescription": "Edit videos with professional tools.",
+    "fullDescription": "Edit videos with professional tools to create stunning content for social media and projects.",
+    "size": 55,
+    "reviews": 1300,
+    "ratingAvg": 4.3,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 570 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/40/9a/f4/409af49f7300f5bf8e5a24676a3f5f27.jpg",
+    "title": "Meditation Guide",
+    "companyName": "ZenMind",
+    "id": 13,
+    "shortDescription": "Guided meditations for relaxation.",
+    "fullDescription": "Guided meditations for relaxation and mindfulness to help you achieve inner peace.",
+    "size": 27,
+    "reviews": 750,
+    "ratingAvg": 4.7,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 445 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/6f/48/c4/6f48c461187dba824b00ef3e320943e4.jpg",
+    "title": "Stock Tracker",
+    "companyName": "InvestSmart",
+    "id": 14,
+    "shortDescription": "Track stock prices and market trends.",
+    "fullDescription": "Track stock prices and market trends with real-time data and investment insights.",
+    "size": 38,
+    "reviews": 850,
+    "ratingAvg": 4.0,
+    "downloads": 220000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/44/f1/a1/44f1a1b329b864e71f9ef881ab4ae2ae.jpg",
+    "title": "Travel Planner",
+    "companyName": "Wanderlust",
+    "id": 15,
+    "shortDescription": "Plan trips and explore destinations.",
+    "fullDescription": "Plan your trips and discover new destinations with itineraries and travel tips.",
+    "size": 42,
+    "reviews": 1100,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 660 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/cc/46/3c/cc463c2e7e27496a872a378e146f427b.jpg",
+    "title": "Password Manager",
+    "companyName": "SecureVault",
+    "id": 16,
+    "shortDescription": "Securely store and manage passwords.",
+    "fullDescription": "Securely store and manage your passwords with encryption and easy access.",
+    "size": 15,
+    "reviews": 300,
+    "ratingAvg": 4.4,
+    "downloads": 80000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 130 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/d1/fa/09/d1fa094ad4d8c99d3856993dd78423a1.jpg",
+    "title": "Podcast Listener",
+    "companyName": "AudioHub",
+    "id": 17,
+    "shortDescription": "Listen to podcasts from various genres.",
+    "fullDescription": "Listen to podcasts from various genres with seamless streaming and offline support.",
+    "size": 33,
+    "reviews": 650,
+    "ratingAvg": 4.2,
+    "downloads": 180000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 275 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/736x/2d/a5/b1/2da5b154e5e7792ec1c3749f266a5d8b.jpg",
+    "title": "Note Taker",
+    "companyName": "QuickNotes",
+    "id": 18,
+    "shortDescription": "Take and organize notes efficiently.",
+    "fullDescription": "Take quick notes and organize them efficiently with categories and search features.",
+    "size": 19,
+    "reviews": 450,
+    "ratingAvg": 4.5,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 220 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/fe/d3/3f/fed33fb78192f2477fe516df4c3d0466.jpg",
+    "title": "AR Explorer",
+    "companyName": "VirtuaWorld",
+    "id": 19,
+    "shortDescription": "Explore augmented reality experiences.",
+    "fullDescription": "Explore augmented reality experiences with interactive and immersive features.",
+    "size": 60,
+    "reviews": 1400,
+    "ratingAvg": 4.1,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 580 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/1200x/fd/d0/0d/fdd00d4f341e7012551c6c97c7f748c3.jpg",
+    "title": "Habit Builder",
+    "companyName": "DailyRoutine",
+    "id": 20,
+    "shortDescription": "Build habits with daily reminders.",
+    "fullDescription": "Build positive habits with daily reminders and progress tracking to achieve your goals.",
+    "size": 24,
+    "reviews": 550,
+    "ratingAvg": 4.7,
+    "downloads": 160000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 330 }
+    ]
+  }
+]
