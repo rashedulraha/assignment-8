@@ -43,7 +43,11 @@ const Banner = () => {
           </div>
           <div className="mt-5 md:mt-10 flex items-center justify-center">
             <figure>
-              <img w-full h-full src={bannerMainImage} alt="banner main img" />
+              <img
+                className="w-full h-full"
+                src={bannerMainImage}
+                alt="banner main img"
+              />
             </figure>
           </div>
         </Container>

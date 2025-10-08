@@ -1,8 +1,8 @@
 import { Eye, Star } from "lucide-react";
 import React from "react";
+import { Link } from "react-router";
 
 const AppsCard = ({ singProduct }) => {
-  console.log(singProduct);
   const {
     image,
     companyName,
@@ -11,6 +11,7 @@ const AppsCard = ({ singProduct }) => {
     size,
     shortDescription,
     ratingAvg,
+    id,
   } = singProduct;
 
   return (
@@ -56,10 +57,14 @@ const AppsCard = ({ singProduct }) => {
         </div>
 
         {/* view Button */}
-        <button className="w-full bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center gap-3 capitalize cursor-pointer">
+
+        <Link
+          to={`/productDetails/${id}`}
+          className="w-full bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center gap-3 capitalize cursor-pointer"
+        >
           <Eye size={20} strokeWidth={2.25} />
-          view product
-        </button>
+          view app details
+        </Link>
       </div>
     </div>
   );
