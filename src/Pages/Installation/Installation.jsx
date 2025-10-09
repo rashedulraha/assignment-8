@@ -36,7 +36,7 @@ const Installation = () => {
       <div className="my-5 flex items-center justify-between">
         <div>
           <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold">
-            Install apps{" "}
+            Install apps
             <span className="text-base font-normal text-gray-500">
               ({install ? install.length : "0"})
             </span>
@@ -55,7 +55,6 @@ const Installation = () => {
           </select>
         </div>
       </div>
-
       {sortingInstallApp && install.length > 0 ? (
         sortingInstallApp.map((installApps) => (
           <InstallAppCard key={installApps.id} installApps={installApps} />
@@ -77,6 +76,7 @@ const Installation = () => {
           </div>
         </div>
       )}
+      ?
     </Container>
   );
 };

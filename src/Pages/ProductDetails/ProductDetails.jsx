@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import downLoadImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import ReviewsImg from "../../assets/icon-review.png";
 import Container from "../../Components/Container";
 import { localUpdateApps } from "../../Utils/LocalStorage";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const ProductDetails = ({ findProduct }) => {
+  const [isInstalled, setIsInstalled] = useState(false);
+
+  const handleInstall = () => {
+    localUpdateApps(findProduct);
+    setIsInstalled(true);
+  };
+
   const {
     image,
     title,
@@ -15,6 +31,7 @@ const ProductDetails = ({ findProduct }) => {
     size,
     fullDescription,
     downloads,
+    ratings,
   } = findProduct || {};
 
   return (
@@ -32,7 +49,7 @@ const ProductDetails = ({ findProduct }) => {
                 {title}
               </h2>
               <p className="text-gray-500 font-normal text-lg">
-                Developed by{" "}
+                Developed by
                 <span className="text-info cursor-pointer">{companyName}</span>
               </p>
             </div>
@@ -69,11 +86,40 @@ const ProductDetails = ({ findProduct }) => {
             </div>
 
             <button
-              onClick={() => localUpdateApps(findProduct)}
-              className=" btn border-none bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-semibold text-white mt-5"
+              onClick={handleInstall}
+              disabled={isInstalled}
+              className={`btn border-none bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-semibold text-white mt-5 ${
+                isInstalled ? "opacity-50 cursor-not-allowed " : ""
+              }`}
             >
-              Install Now ({size} MB)
+              {isInstalled ? "Installed" : `Install Now (${size} MB)`}
             </button>
+          </div>
+        </div>
+
+        {/* rechart  */}
+
+        <div className="space-y-3 mt-5 md:mt-8">
+          <h3 className="text-lg md:text-2xl font-semibold text-zinc-900 border-b-2 border-gray-900 w-fit mb-3">
+            Apps Ratings
+          </h3>
+          <div className="my-10" style={{ width: "100%", height: 300 }}>
+            <h2 style={{ fontWeight: "bold", marginBottom: "10px" }}>
+              Ratings
+            </h2>
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart
+                data={ratings}
+                layout="vertical"
+                margin={{ top: 10, right: 30, left: 50, bottom: 10 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis type="number" />
+                <YAxis dataKey="name" type="category" />
+                <Tooltip />
+                <Bar dataKey="count" fill="#FF9800" barSize={20} />
+              </BarChart>
+            </ResponsiveContainer>
           </div>
         </div>
 
