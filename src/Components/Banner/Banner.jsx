@@ -26,9 +26,9 @@ const Banner = () => {
               <a
                 target="_blank"
                 href="https://play.google.com/store/games?hl=en"
-                className="btn font-semibold text-lg "
+                className="btn text-lg  font-normal md:font-semibold text-white bg-gradient-to-r from-[#9F62F2] to-[#632EE3] shadow-none"
               >
-                <figure className="w-8 h-4 overflow-hidden">
+                <figure className=" h-5 overflow-hidden">
                   <img
                     className="w-full h-full object-contain"
                     src={payStore}
@@ -40,10 +40,14 @@ const Banner = () => {
               <a
                 target="_blank"
                 href="https://www.apple.com/app-store/"
-                className="btn text-lg font-semibold"
+                className="btn text-lg  font-normal md:font-semibold text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] shadow-none"
               >
-                <figure>
-                  <img src={appStore} alt="app Store image" />
+                <figure className=" h-5 overflow-hidden">
+                  <img
+                    className="w-full h-full object-contain"
+                    src={appStore}
+                    alt="app Store image"
+                  />
                 </figure>
                 App Store
               </a>

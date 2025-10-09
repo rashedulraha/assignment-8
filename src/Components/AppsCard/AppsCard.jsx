@@ -25,14 +25,16 @@ const AppsCard = ({ singProduct }) => {
           />
         </figure>
 
-        <div className="ml-4 space-y-2 mt-5">
-          <h2 className="text-xl font-bold text-gray-800">{title}</h2>
-          <p className="text-gray-500">{companyName}</p>
+        <div className="ml-4 mt-5 space-y-2">
+          <h2 className="text-xl font-bold text-gray-800 truncate">{title}</h2>
+          <p className="text-purple-900 my-3 bg-purple-100 font-semibold text-center px-2 py-[2px]  ">
+            {companyName}
+          </p>
         </div>
       </div>
 
       {/* Card Body */}
-      <div className="px-6 pb-6">
+      <div className="px-4 pb-6 ">
         <p className="text-gray-600 mb-4">{shortDescription}</p>
 
         {/* Stats */}

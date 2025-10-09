@@ -20,7 +20,7 @@ const ProductDetails = ({ findProduct }) => {
   return (
     <>
       <Container>
-        <div className="flex items-start  gap-5 ">
+        <div className="flex items-start  gap-10 ">
           <div className="flex-1 w-full h-full">
             <figure className="  rounded-md  overflow-hidden">
               <img className="w-full h-full" src={image} alt="product image" />

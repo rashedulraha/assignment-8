@@ -7,6 +7,7 @@ import Installation from "../Pages/Installation/Installation";
 import ErrorPage from "../Pages/Err/ErrorPage";
 import ProductDetails from "../Pages/ProductDetailsPage/ProductDetailsPage";
 import ProductDetailsPage from "../Pages/ProductDetailsPage/ProductDetailsPage";
+import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "productDetails/:id",
         Component: ProductDetailsPage,
+      },
+      {
+        path: "PrivacyPolicy",
+        Component: PrivacyPolicy,
       },
     ],
   },

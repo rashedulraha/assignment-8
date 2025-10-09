@@ -31,6 +31,11 @@ const Navbar = () => {
             Installation
           </span>
         </NavLink>
+        <NavLink to={"/PrivacyPolicy"}>
+          <span className="text-lg font-normal md:font-semibold">
+            PrivacyPolicy
+          </span>
+        </NavLink>
       </div>
     </>
   );
@@ -83,7 +88,7 @@ const Navbar = () => {
                 />
               </figure>
               <span className="font-bold text-lg bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
-                Hero.oi
+                AppVibe
               </span>
             </a>
           </div>
