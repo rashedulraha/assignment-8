@@ -36,28 +36,35 @@ const Installation = () => {
       <div className="my-5 flex items-center justify-between">
         <div>
           <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold">
-            Install apps
+            Install apps{" "}
             <span className="text-base font-normal text-gray-500">
               ({install ? install.length : "0"})
             </span>
           </h2>
         </div>
         <div>
-          <select
-            onChange={(e) => setSortInstallApp(e.target.value)}
-            value={sortInstallApp}
-            defaultValue="Pick a color"
-            className="select"
-          >
-            <option disabled={true}>Sort Install apps</option>
-            <option value={"asc"}>Low &gt; high</option>
-            <option value={"dsc"}>high &gt; low</option>
-          </select>
+          <label>
+            <select
+              onChange={(e) => setSortInstallApp(e.target.value)}
+              value={sortInstallApp}
+              defaultValue="Pick a color"
+              className="select"
+            >
+              <option disabled={true}>Sort Install apps</option>
+              <option value={"asc"}>Low &gt; high</option>
+              <option value={"dsc"}>high &gt; low</option>
+            </select>
+          </label>
         </div>
       </div>
+
       {sortingInstallApp && install.length > 0 ? (
         sortingInstallApp.map((installApps) => (
-          <InstallAppCard key={installApps.id} installApps={installApps} />
+          <InstallAppCard
+            setInstall={setInstall}
+            key={installApps.id}
+            installApps={installApps}
+          />
         ))
       ) : (
         <div className="min-h-[60vh] bg-gradient-to-r from-base-300 to-base-200 flex items-center justify-center ">
@@ -76,7 +83,6 @@ const Installation = () => {
           </div>
         </div>
       )}
-      ?
     </Container>
   );
 };

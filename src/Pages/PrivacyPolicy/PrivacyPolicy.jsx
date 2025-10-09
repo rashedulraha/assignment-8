@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4 sm:px-6 lg:px-8">
       <div className="full mx-auto bg-white shadow-lg rounded-lg p-6 sm:p-8 lg:p-12">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 text-center">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ">
           AppVibe Privacy Policy
         </h1>
         <p className="text-sm sm:text-base text-gray-600 mb-8 italic text-center">

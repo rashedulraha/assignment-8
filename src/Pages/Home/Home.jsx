@@ -7,7 +7,7 @@ import { Link } from "react-router";
 import Skeleton from "../../Components/LoadingSpiner/Skeleton";
 
 const Home = () => {
-  const { product, loading, error } = useProduct();
+  const { product, loading } = useProduct();
 
   const featuredProduct = product.slice(0, 8);
 

@@ -29,9 +29,6 @@ const AppsCard = ({ singProduct }) => {
           <h2 className="text-xl sm:text-2xl font-bold text-gray-800 truncate">
             {title}
           </h2>
-          <p className="text-purple-900 my-2 sm:my-3 bg-purple-100 font-semibold text-center px-2 py-1 text-sm sm:text-base rounded-md">
-            {companyName}
-          </p>
         </div>
       </div>
 

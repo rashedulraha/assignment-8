@@ -3,7 +3,7 @@ import downLoadImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import ReviewsImg from "../../assets/icon-review.png";
 import Container from "../../Components/Container";
-import { localUpdateApps } from "../../Utils/LocalStorage";
+import { localInstallApps, localUpdateApps } from "../../Utils/LocalStorage";
 import {
   Bar,
   BarChart,
@@ -13,11 +13,35 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
 
 const ProductDetails = ({ findProduct }) => {
   const [isInstalled, setIsInstalled] = useState(false);
 
+  const { id } = findProduct;
+
   const handleInstall = () => {
+    const includingLocalData = localInstallApps();
+    const found = includingLocalData.some((foundData) => foundData.id === id);
+
+    if (found) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "You have already install this app",
+      });
+    } else {
+      Swal.fire({
+        title: "Successfully install this app",
+        text: "You click and close",
+        icon: "success",
+      });
+    }
+
+    // !don't touch this
     localUpdateApps(findProduct);
     setIsInstalled(true);
   };
@@ -49,7 +73,7 @@ const ProductDetails = ({ findProduct }) => {
                 {title}
               </h2>
               <p className="text-gray-500 font-normal text-lg">
-                Developed by
+                Developed by {"  "}
                 <span className="text-info cursor-pointer">{companyName}</span>
               </p>
             </div>

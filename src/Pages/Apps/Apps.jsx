@@ -5,7 +5,7 @@ import AppsCard from "../../Components/AppsCard/AppsCard";
 import Skeleton from "../../Components/LoadingSpiner/Skeleton";
 
 const Apps = () => {
-  const { product, loading, error } = useProduct();
+  const { product, loading } = useProduct();
   const [searchApp, setSearchApps] = useState("");
 
   const readyToSearch = searchApp.trim().toLocaleLowerCase();
