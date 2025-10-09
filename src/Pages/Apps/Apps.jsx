@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Container from "../../Components/Container";
 import useProduct from "../../Hook/useProduct";
 import AppsCard from "../../Components/AppsCard/AppsCard";
+import Skeleton from "../../Components/LoadingSpiner/Skeleton";
 
 const Apps = () => {
   const { product, loading, error } = useProduct();
@@ -65,11 +66,15 @@ const Apps = () => {
 
         {/*  all product container */}
 
-        <div className="mt-5 md:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
-          {searchProducts.map((singProduct) => (
-            <AppsCard key={singProduct.id} singProduct={singProduct} />
-          ))}
-        </div>
+        {loading ? (
+          <Skeleton count={20} />
+        ) : (
+          <div className="mt-5 md:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+            {searchProducts.map((singProduct) => (
+              <AppsCard key={singProduct.id} singProduct={singProduct} />
+            ))}
+          </div>
+        )}
       </div>
     </Container>
   );

@@ -6,7 +6,15 @@ import ProductDetails from "../ProductDetails/ProductDetails";
 
 const ProductDetailsPage = () => {
   const { id } = useParams();
-  const { product } = useProduct();
+  const { product, loading } = useProduct();
+
+  if (loading) {
+    return (
+      <>
+        <p>Loading...</p>
+      </>
+    );
+  }
   const findProduct = product.find(
     (singProduct) => String(singProduct.id) === id
   );

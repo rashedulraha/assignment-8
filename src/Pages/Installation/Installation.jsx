@@ -1,9 +1,12 @@
 import React from "react";
+import Container from "../../Components/Container";
 
 const Installation = () => {
   return (
     <div>
-      <h1>Installation</h1>
+      <Container>
+        <h1>Installation</h1>
+      </Container>
     </div>
   );
 };

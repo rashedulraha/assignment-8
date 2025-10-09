@@ -4,6 +4,7 @@ import Container from "../../Components/Container";
 import useProduct from "../../Hook/useProduct";
 import AppsCard from "../../Components/AppsCard/AppsCard";
 import { Link } from "react-router";
+import Skeleton from "../../Components/LoadingSpiner/Skeleton";
 
 const Home = () => {
   const { product, loading, error } = useProduct();
@@ -26,11 +27,15 @@ const Home = () => {
 
         {/* trending app container */}
 
-        <div className="mt-5 md:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
-          {featuredProduct.map((singProduct) => (
-            <AppsCard key={singProduct.id} singProduct={singProduct} />
-          ))}
-        </div>
+        {loading ? (
+          <Skeleton />
+        ) : (
+          <div className="mt-5 md:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+            {featuredProduct.map((singProduct) => (
+              <AppsCard key={singProduct.id} singProduct={singProduct} />
+            ))}
+          </div>
+        )}
 
         <div className="my-5 md:my-10 flex items-center justify-center">
           <Link to={"apps"}>

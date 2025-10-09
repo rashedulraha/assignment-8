@@ -23,7 +23,11 @@ const Banner = () => {
               ideas into digital experiences that truly make an impact.
             </p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-5 mt-3">
-              <a className="btn font-semibold text-lg ">
+              <a
+                target="_blank"
+                href="https://play.google.com/store/games?hl=en"
+                className="btn font-semibold text-lg "
+              >
                 <figure className="w-8 h-4 overflow-hidden">
                   <img
                     className="w-full h-full object-contain"
@@ -33,7 +37,11 @@ const Banner = () => {
                 </figure>
                 Google Play
               </a>
-              <a className="btn text-lg font-semibold">
+              <a
+                target="_blank"
+                href="https://www.apple.com/app-store/"
+                className="btn text-lg font-semibold"
+              >
                 <figure>
                   <img src={appStore} alt="app Store image" />
                 </figure>

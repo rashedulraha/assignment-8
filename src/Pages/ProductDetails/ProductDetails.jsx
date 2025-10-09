@@ -3,13 +3,13 @@ import downLoadImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import ReviewsImg from "../../assets/icon-review.png";
 import Container from "../../Components/Container";
+import { localUpdateApps } from "../../Utils/LocalStorage";
 
 const ProductDetails = ({ findProduct }) => {
   const {
     image,
     title,
     companyName,
-    shortDescription,
     ratingAvg,
     reviews,
     size,
@@ -17,14 +17,13 @@ const ProductDetails = ({ findProduct }) => {
     downloads,
   } = findProduct || {};
 
-  console.log(findProduct);
   return (
     <>
       <Container>
         <div className="flex items-start  gap-5 ">
           <div className="flex-1 w-full h-full">
             <figure className="  rounded-md  overflow-hidden">
-              <img w-full h-full src={image} alt="product image" />
+              <img className="w-full h-full" src={image} alt="product image" />
             </figure>
           </div>
           <div className="flex-2">
@@ -69,10 +68,21 @@ const ProductDetails = ({ findProduct }) => {
               </div>
             </div>
 
-            <button className=" btn border-none bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-semibold text-white mt-5">
+            <button
+              onClick={() => localUpdateApps(findProduct)}
+              className=" btn border-none bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-semibold text-white mt-5"
+            >
               Install Now ({size} MB)
             </button>
           </div>
+        </div>
+
+        {/* product description  */}
+        <div className="mt-5 md:mt-10">
+          <h2 className="text-lg md:text-2xl font-semibold text-zinc-900 border-b-2 border-gray-900 w-fit mb-3 ">
+            Description
+          </h2>
+          <p className="text-zinc-500 text-base">{fullDescription}</p>
         </div>
       </Container>
     </>
